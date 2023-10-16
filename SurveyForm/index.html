@@ -1,0 +1,114 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+</head>
+<div id="container-page">
+    <div class="container-survey">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form" name="surveyForm">  <!-- Should I use th form tag 'action' prop or the one from submit button at bottom? -->
+            <div class="container-questions">
+                <label id="name-label" class="questions" for="name">Name</label>
+                <input class="box-width" type="text" id="name" name="name"  placeholder="Enter a Name here..." required>
+            </div>
+            <div class="container-questions">
+                <label id="email-label" class="questions" for="email">E-mail</label>
+                <input class="box-width" type="email" id="email" name="email" placeholder="Enter an e-mail here..." required>
+            </div>
+            <div class="container-questions">
+                <label id="number-label" class="questions" for="number">Age<pre> (optional)</pre></label>
+                <input class="box-width" type="number" id="number" name="age" min="1" max="9" placeholder="Enter a Number here...">
+            </div>
+            <div class="container-questions">
+                <label class="questions labelFselect" for="dropdown">Which option best describes your current role?</label>
+                <select id="dropdown" class="select-width">
+                    <option disabled selected value>Select Option</option>
+                    <option value="student">Student</option>
+                    <option value="fulltimejob">Full Time Job</option>
+                    <option value="fulltimelearner">Full Time Learner</option>
+                    <option value="perfernottosay">Perfer Not To Say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="container-questions">
+                <label class="lone-label questions">Would you recommend freeCodeCamp to a friend?</label>
+                
+                <div class="container">
+                    <input type="radio" id="definately" name="recommend" value="Definately">
+                    <label class="radio" for="definately">Definately</label>
+                </div>
+                <div class="container">
+                    <input type="radio" id="maybe" name="recommend" value="Maybe">
+                    <label class="radio" for="maybe">Maybe</label>
+                </div>
+                <div class="container">                
+                    <input type="radio" id="notsure" name="recommend" value="Not sure">
+                    <label class="radio" for="notsure">Not sure</label>
+                </div>
+            </div>
+            <div class="container-questions">
+                <label class="questions labelFselect" for="favfeature">What is your favorite feature of freeCodeCamp?</label>
+                <select id="favfeature" class="select-width">
+                    <option disabled selected value>Select Option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="open source">Open Source</option>
+                </select>
+            </div> 
+            <div class="container-questions">
+                <label class="lone-label questions">What would you like to see improved?<pre> (Check all that apply)</pre></label>
+                <div class="container">    
+                    <input type="checkbox" id="frontend" name="frontend" value="Front-end Projects">
+                    <label class="checkbox" for="frontend">Front-end Projects</label>
+                </div>
+                <div class="container">
+                    <input type="checkbox" id="backend" name="backend" value="Back-end Projects">
+                    <label class="checkbox" for="backend">Back-end Projects</label>
+                </div>
+                <div class="container">
+                    <input type="checkbox" id="datavis" name="datavis" value="Data Visualization">
+                    <label class="checkbox" for="datavis">Data Visualization</label>
+                </div>
+                <div class="container">
+                    <input type="checkbox" id="challenges" name="challenges" value="Challenges">
+                    <label class="checkbox" for="challenges">Challenges</label>
+                </div>
+                <div class="container">
+                    <input type="checkbox" id="opensourcecom" name="opensourcecom" value="Open Source Cummunity">
+                    <label class="checkbox" for="opensourcecom">Open Source Community</label>
+                </div>
+                <div class="container">
+                    <input type="checkbox" id="gitter" name="gitter" value="Gitter help rooms">
+                    <label class="checkbox" for="gitter">Gitter help rooms</label>
+                </div>
+                <div class="container">
+                    <input type="checkbox" id="videos" name="videos" value="Videos">
+                    <label class="checkbox" for="videos">Videos</label>
+                </div>
+                <div class="container">
+                    <input type="checkbox" id="wiki" name="wiki" value="Wiki">
+                    <label class="checkbox" for="wiki">Wiki</label>
+                </div>
+                <div class="container">
+                    <input type="checkbox" id="forum" name="forum" value="Forum">
+                    <label class="checkbox" for="forum">Forum</label>
+                </div>
+                <div class="container">
+                    <input type="checkbox" id="addcourses" name="addcourses" value="Additional Courses">
+                    <label class="checkbox" for="addcourses">Additional Courses</label>
+                </div>
+            </div>
+            <div class="container-questions">
+                <label id="id-comments" class="questions" for="comments">Any comments or suggestions?</label>
+                <textarea id="comments" class="box-width" name="comments" rows="4" cols="50" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="container-questions submit">
+                <!-- <input id="submit" type="button" value="submit" onclick="./action_page.php"> -->
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Link to CDN to test my work ----------------------------------------------------->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+<!-- --------------------------------------------------------------------------------->
